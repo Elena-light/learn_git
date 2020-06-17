@@ -1,0 +1,22 @@
+$ git remote add origin git@github.com:Elena-light/learn_git.git
+$ git remote
+origin
+$ ssh-keygen -t rsa -C "emailaddress"
+$ cd sshkeydirectory
+$ ls
+$ cat id_rsa.pub
+# 复制公钥中的内容
+# 到github website -> setting -> SSH and GPG keys -> new SSH key -> paste
+# 测试本地与远程是否可以建立连接
+$ ssh -T git@github.com
+$ cd localgitdirectory
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 239 bytes | 239.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:Elena-light/learn_git.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
